@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="htp.css">
+</head>
+
+<body class="body">
+    <form action="#">
+    <h1 id="header">Recommendation</h1>
+    <div class="grey">
+        <Label class="bold">Applicant</Label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="applicant" id="applicant"><br>
+
+        <label class="bold">Applying to</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label class="normal">Standford University Graduate Admissions</label><br>
+        
+        <label class="bold">Recommender</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        <label class="normal">Recommender</label>
+    </div><br>
+    <h3>Applicant Information</h3>
+    <label class="bold">Applicant Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label class="normal">Saket Upadhyay</label>
+    <p class="normal">Once you are a student in attendance, 
+        the Family Educational Rights and Privacy Act of 1974 (FERPA) provides you with a right of access to your education record, 
+        including letters of reference if they are retained by the school.
+         FERPA also permits students to waive the right of access to letters of reference if you so choose. 
+         Waiving your right of access is optional;
+          your decision to waive or decline to waive that right will have no bearing on the handling of your application. 
+          Your recommender will see your choice.</p>
+
+    <label class="bold">[X] I waive my right to access this report</label><br>
+    <label class="normal">[ ] I do not waive my right to access this report</label><br><br>
+    <label class="normal">Signed By:</label><br>
+
+    <p class="italics">This recommendation will remain confidential during the admission process, 
+        regardless of the applicant's waiver response above. 
+        If the applicant did not waive the right to view the recommendation and later enrolls in the graduate program selected on this application, 
+        the applicant may read this recommendation.</p>
+    <p class="italics">Required fields are indicated with *</p><br>
+
+    <h1 id="header">Recommender Information</h1>  
+    <label class="normal">The below information was provided by the applicant.
+        To make edits, check the box at the bottom of the screen.
+    </label> <br><br>
+    <label class="normal">Prefix</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <select name="prefix" id="prefix" class="normal">
+        <option value="Sir">Sir</option>
+        <option value="Madam">Madam</option>
+        <option value="Master">Master</option>  
+    </select><br><br>
+
+    <label class="normal">First Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" name="first_name" id="first_name" placeholder="Satish" required><br><br>
+
+    <label class="normal">Last Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" name="last_name" id="last_name" placeholder="C.J" required><br><br>
+
+    <label class="normal">Organization</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" name="Organization" id="Organization" placeholder="Vellore Institute Of Technology" required><br><br>
+
+    <label class="normal">Position</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" name="position" id="position" placeholder="Associate Professor" required><br><br>
+
+    <label class="normal">Phone Number</label>&nbsp;&nbsp;&nbsp;
+    <input type="number" name="phone" id="phone"><br><br>
+
+    <input type="checkbox" name="checkbox" id="checkbox" class="newmargin">
+    <label class="normal">Check this box to update the information above</label>
+
+    <h1 id="header">Evaluation Questions</h1>
+    <label class="normal">Please identify the most selective group from which you are comparing the applicant</label><br>
+    <select name="selective" id="selective" class="normal" required>
+        <option value="undergraduate">Undergraduate Students</option>
+        <option value="masters">Masters Level Students</option>
+        <option value="doctoral">Doctoral Level Students</option>
+        <option value="Other">Other</option> 
+    </select><br><br>
+
+    <label class="normal">How many years have you evaluated people in this group?</label><br>
+    <input type="number" name="years" id="years" required><br><br>
+
+    <label class="normal">Approximately how many people are in this age group, totaled over the years?</label><br>
+    <input type="number" name="people" id="people" required><br><br>
+
+    <label class="normal">In overall ability, this candidate is among the:</label><br>
+    <select name="tier" id="tier" class="normal" required>
+        <option value="top1-2%">Top 1-2%</option>
+        <option value="top5%">Top 5%</option>
+        <option value="top10%">Top 10%</option>
+        <option value="top25%">Top 25%</option>
+        <option value="second">Second Quarter</option>
+        <option value="third">Third Quarter</option>
+        <option value="bottom">Bottom Quarter</option>
+        <option value="no_basis">No basis for judgement</option>  
+    </select><br><br>
+
+    <label class="normal">Admission to graduate study t Stanford University is:</label><br>
+    <select name="admission" id="admission" class="normal" required>
+        <option value="strongly_recommended">Strongly Recommended</option>
+        <option value="recommended">Recommended</option>
+        <option value="recommended_with">Recommended with Reservations</option>
+        <option value="not-recommended">NOT Recommended</option>
+        <option value="try at your own risk">Try at your own risk</option>  
+    </select><br><br>
+
+    <h1 id="header">Letter Of Recommendation</h1>
+    <label class="normal">Upload your letter of Recommendation below</label><br><br>
+    <input type="file" name="LOR" id="LOR"><br><br>
+
+    <label class="normal">Or, type or copy-and-paste the contents of your decument here:</label><br><br>
+    <input type="text" name="text1" id="text1" size="100%" style="height: 250px"><br><br>
+
+    <p class="italics">Please note that this recommendation, in addition to being used in the admission process for the applicant’s 
+        selected graduate program, may be used: as part of the selection process for a different graduate program, 
+        for a research group, or laboratory, for a research or teaching assistantship, or for an honor or award;
+         in connection with academic mentoring during the period of the student's enrollment; 
+        or for financial support derived from any source available to Stanford.
+        </p>
+
+    <h1 id="header">Submission</h1>
+    <label class="normal">In place of your signature, use your full legal name:</label><br><br>
+    <input type="text" name="signature" id="signature" class="newmargin2"><br><br>
+
+    <div class="red">
+        &nbsp;&nbsp;
+        <label class="red">Please note that you may not edit your recommendation after submision<br>&nbsp;&nbsp;
+        Do you want to submit your recommendation now? Click the "Submit" button below.</label>
+    </div><br><br>
+
+    <input type="submit" name="submit" id="submit" value="Submit">&nbsp;&nbsp;
+    <input type="submit" name="preview" id="preview" value="Preview">&nbsp;&nbsp;
+    <input type="submit" name="save" id="save" value="Save for later">
+    
+</form>
+</body>
+
+</html>
